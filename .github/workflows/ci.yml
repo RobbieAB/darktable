@@ -5,8 +5,7 @@ name: CI
 on:
   push:
     branches: 
-      - master
-      - darktable-**
+      - "*"
     paths-ignore:
         - "po/**"
         - "packaging/**"
