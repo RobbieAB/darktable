@@ -36,6 +36,7 @@ on:
 jobs:
 
   Linux:
+    if: github.repository == 'RobbieAB/darktable' 
     name: Linux.${{ matrix.os.code }}.${{ matrix.compiler.compiler }}.${{ matrix.target }}.${{ matrix.btype }}
     runs-on: ${{ matrix.os.label }}
     strategy:
